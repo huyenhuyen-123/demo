@@ -1,0 +1,46 @@
+**PRIMARY KEY**
+- Mỗi bảng chỉ có 1 khóa duy nhất
+- Giá trị ko được để trống
+- Tuy nhiên có thể tạo 1 trường bằng 2 cột 
+VD:
+CREATE TABLE THUOC
+(
+MATHUOC INT NOT NULL,
+TENTHUOC NVARCHAR(30) NOT NULL,
+GHICHU NVARCHAR(40) NOT NULL,
+CONSTRAINT pk_THUOC PRIMARY KEY (MATHUOC)
+)
+
+
+**FOREIGN KEY**
+- SQL là cơ sở dữ liệu có quan hệ có nghĩa là thể hiện liên kết giữa các bảng
+- Foreign key là khóa chính của table kia là khóa ngoại của table này thể hiện mối liên kết giữa 2 bảng
+VD:
+CREATE TABLE THUOC
+(
+MATHUOC INT NOT NULL,
+TENTHUOC NVARCHAR(30) NOT NULL,
+GHICHU NVARCHAR(40) NOT NULL,
+CONSTRAINT pk_THUOC PRIMARY KEY (MATHUOC)
+)
+
+CREATE TABLE CTTOATHUOC
+(
+STT INT NOT NULL,
+MATHUOC INT NOT NULL,
+SOLUONG INT NOT NULL,
+CONSTRAINT pk_CTTOATHUOC PRIMARY KEY (MATHUOC)
+)
+
+ALTER TABLE CTTOATHUOC
+ADD FOREIGN KEY (MATHUOC) REFERENCES THUOC(MATHUOC);
+
+
+**INDEX**
+- Các khóa này được lưu trữ như cấu trúc cây B-tree
+- Để truy vấn đến các giá trị khóa nhanh hơn nhưng tạo ra dữ liệu lâu hơn
+CREATE INDEX idx_THUOC
+ON THUOC (TENTHUOC);
+
+**NO INDEX**
+- Truy vấn chậm hơn nhưng tạo ra dữ liệu nhanh hơn
