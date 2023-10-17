@@ -4,3 +4,12 @@ One-One
 Index
 Primary Key
 Foreign Key
+git add
+git commit
+git push
+git pull
+git branch
+git status
+git merge
+git checkout
+git checkout -b
