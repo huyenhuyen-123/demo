@@ -1,15 +1,27 @@
-one - Many
-Many - Many
-One-One
+**One - Many**
+Là mối quan hệ 1 cá thể và nhiều cá thể
+VD:
+1 bệnh nhân có thể có nhiều toa thuốc
+**Many - Many**
+Là mối quan hệ giữa nhiều cá thể vơí nhiều cá thể
+VD:
+1 khách hàng có thể khám nhiều bác sĩ
+1 bác sĩ có thể khám nhiều khách hàng
+**One-One**
+Là mối quan hệ 1 cá thể với 1 cá thể
+VD:
+1 khách hàng có 1 phiếu khám bệnh
 Index
 Primary Key
 Foreign Key
-git add
-git commit
-git push
-git pull
-git branch
-git status
-git merge
-git checkout
-git checkout -b
+**git add**
+- git add . : là add tất cả các file hiện có 
+- git add (tên thư mục): là add thư mục đó lên 
+git commit: in ra thông báo
+git push: đẩy file mới lên github
+git pull: cập nhật các thay đổi 
+git branch: kiểm tra nhánh đang sử dụng
+git status: cho thấy được trạng thái đang hoạt động 
+git merge: gộp 2 file thành 1
+git checkout: chuyển nhánh
+git checkout -b: tạo nhánh mới và chuyển qua nhánh đó sử dụng 
