@@ -1,0 +1,6 @@
+one - Many
+Many - Many
+One-One
+Index
+Primary Key
+Foreign Key
