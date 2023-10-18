@@ -73,14 +73,32 @@ ADD FOREIGN KEY (MAPHIEU) REFERENCES PHIEUKHAM(MAPHIEU);
 Index
 Primary Key
 Foreign Key
+
 **git add**
 - git add . : là add tất cả các file hiện có 
-- git add (tên thư mục): là add thư mục đó lên 
+VD: git add .
+- git add (tên thư mục): là add thư mục đó lên
+VD:  git add BTSQL.txt
+
 git commit: in ra thông báo
+VD: git commit -m "thông báo cần in ra"
+
 git push: đẩy file mới lên github
+VD: git push
+
 git pull: cập nhật các thay đổi 
+VD: git pull
+
 git branch: kiểm tra nhánh đang sử dụng
+VD: git branch
+
 git status: cho thấy được trạng thái đang hoạt động 
+VD: git status
+
 git merge: gộp 2 file thành 1
+
 git checkout: chuyển nhánh
-git checkout -b: tạo nhánh mới và chuyển qua nhánh đó sử dụng 
+VD: git checkout master
+
+git checkout -b: tạo nhánh mới và chuyển qua nhánh đó sử dụng
+VD:  git checkout -b test
